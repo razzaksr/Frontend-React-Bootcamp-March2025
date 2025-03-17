@@ -14,3 +14,24 @@ Phase 3: React MUI with Firebase:
 	backend >> fire store, firebase
 
 Capstone project.
+
+
+
+
+Bootstrap:
+Mobile First approach >> dynamic scaling/ sizing
+CSS framework>> elements + style
+
+color
+backgrounds
+borders
+.
+.
+
+inbuilt css classes:
+
+component-property
+text-primary
+bg-primary
+btn-primary
+
