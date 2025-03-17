@@ -1,0 +1,16 @@
+Front End Development with React JS Bootcamp:
+
+Phase 1: web app
+	HTML>> text, media, 
+	CSS>> inline, internal, external
+	Bootstrap
+	Java script >> Server side JS>> Node JS
+		data types, operators, decision, loops, array, functions, files
+	
+Phase 2: React with Bootstrap:
+	files/ array
+
+Phase 3: React MUI with Firebase:
+	backend >> fire store, firebase
+
+Capstone project.
