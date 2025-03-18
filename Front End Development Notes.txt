@@ -35,3 +35,16 @@ text-primary
 bg-primary
 btn-primary
 
+break points: md,sm,lg
+alignments: row>> around, between, column
+flex
+carousel
+bootstrap forms
+navigation
+
+
+
+
+
+
+
