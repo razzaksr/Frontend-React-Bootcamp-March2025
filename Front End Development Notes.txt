@@ -38,9 +38,14 @@ btn-primary
 break points: md,sm,lg
 alignments: row>> around, between, column
 flex
-carousel
-bootstrap forms
-navigation
+carousel:
+	3 parts: indicator, inner, icons(previous, next)
+bootstrap forms:
+navigation:
+	brand
+	menu item
+	toggle button
+
 
 
 
