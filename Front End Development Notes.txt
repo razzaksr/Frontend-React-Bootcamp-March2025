@@ -2,6 +2,7 @@ Front End Development with React JS Bootcamp:
 
 Phase 1: web app
 	HTML>> text, media, 
+		elements>> start tag, attribute, body, end tag
 	CSS>> inline, internal, external
 	Bootstrap
 	Java script >> Server side JS>> Node JS

@@ -8,45 +8,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+        function navigate(received){
+            if(received==="forms"){
+                document.getElementById("frame").src='Forms.html';
+            }
+            else if(received==="slide"){
+                document.getElementById("frame").src='SlideShow.html';
+            }
+            else{
+                document.getElementById("frame").src='';
+            }
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
             <!-- part 1 brand-->
             <a class="navbar-brand" href="http://crescentedtech.netlify.app">Crescent edTech</a>
             <!-- part2 toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#traverse" aria-controls="traverse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#traverse">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- part 3 menu/ collapse -->
             <div class="collapse navbar-collapse" id="traverse">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item me-3 active">
+                        <a class="btn btn-outline-success rounded-3" href="http://www.linkedin.com">LinkedIn</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item me-3">
+                        <button class="btn btn-outline-success" onclick="navigate('forms')">Forms</button>
                     </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <li class="nav-item me-3">
+                        <button class="btn btn-outline-success" onclick="navigate('slide')">Slideshow</button>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
+    <iframe id="frame" src="" style="height: 80vh;width: 100%;"></iframe>
 </body>
 </html>
