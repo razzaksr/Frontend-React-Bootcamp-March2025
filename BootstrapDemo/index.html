@@ -14,12 +14,28 @@
             border-style: dotted;
         }
     </style>
+    <script>
+        function enroll(){
+            const color = prompt('tell us color to change ','')
+            document.getElementsByTagName("p")[2].style="color:"+color;
+        }
+        function dequeue(){
+            document.getElementsByTagName("p")[2].style="color:white;background-color:black";
+        }
+        function removing(){
+            const index = prompt("enter index to remove ","")
+            // alert("selected "+index)
+            var myList = document.getElementsByName("ul")[0]
+            var items = myList.getElementsByTagName("li")[index]
+            myList.removeChild(items[index])
+        }
+    </script>
 </head>
 <body>
     <!-- primary, danger, warning, dark, light, secondary, success, info -->
     <p class="text-primary">Welcome to Crescent edTech</p>
     <p class="text-warning">We offer following bootcamps</p>
-    <ul class="text-success">
+    <ul class="text-success" ondblclick="removing()">
         <li>Cybersecurity</li><li>Blockchain</li><li>Full Stack Development</li>
         <li>IoT</li><li>Data analystics</li>
     </ul>
@@ -29,7 +45,7 @@
         <li>Associate Software Trainee</li>
     </ol>
     <!--text size display-1 to display-6-->
-    <p class="display-1">Services we offer</p>
+    <p onmouseenter="enroll()" onmouseleave="dequeue()" class="display-1">Services we offer</p>
     <p class="display-4">Corporate Training</p>
     <p class="display-4">Institutional Training</p>
     <p class="display-4">Inhouse Training</p>

@@ -47,10 +47,38 @@ navigation:
 	menu item
 	toggle button
 
+Use case: 
+	Guest management: SPA
+	Menu to traverse between following:
+		1. Forms for enroll new guest
+		2. Table to display existing guest's
+		3. Display forms with existing guest detail to 				edit
+
+	Student Profile Record: 
+	Menu to switch between following frames
+		1. Register student basic details:
+			name, rollno, department, year, batch, degree, address, contact, email, dob
+		2. View existing Students details in flex of cards
 
 
+		Java script:
+			client events, validation
+			server side >> dynamic web app/ full stack
+			
+Client side java script:
+	along with html
+	
+	variables:
+		var, let, const(constant)
+		eg: var myDream='CEO'
+	functions:
+		function, var, let, const
+	data types:
+		String, Number, Boolean, Object>> Array, JavaScriptObjectNotation, date,....
+	operators:
+	
+	events:
+		onclick, ondoubleclick, onmouseenter, onmouseleave, ....
 
-
-
-
+		
 
