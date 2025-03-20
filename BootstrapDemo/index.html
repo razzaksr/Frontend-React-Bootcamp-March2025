@@ -24,10 +24,8 @@
         }
         function removing(){
             const index = prompt("enter index to remove ","")
-            // alert("selected "+index)
-            var myList = document.getElementsByName("ul")[0]
-            var items = myList.getElementsByTagName("li")[index]
-            myList.removeChild(items[index])
+            var myList = document.getElementsByTagName("ul")[0]
+            myList.removeChild(myList.children[index])
         }
     </script>
 </head>
