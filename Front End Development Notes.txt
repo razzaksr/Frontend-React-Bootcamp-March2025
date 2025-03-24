@@ -80,5 +80,38 @@ Client side java script:
 	events:
 		onclick, ondoubleclick, onmouseenter, onmouseleave, ....
 
-		
+	Array:
+		filter, map
+		push, pop, 
 
+
+
+User defined objects:
+
+Bank:
+	name, branch, ifscode, contact, address
+
+
+1. function
+2. JSON
+
+{
+"key":value
+}
+
+{"name":"icici","branch":"ammapet","ifscode":"AB5455F","contact":45643456, "address":"fvvvrrvr"}
+
+
+
+Local storage: String
+browser >> kind of permanent memory
+Session storage:
+login-logout
+
+setItem("variableName",value)
+getItem("variableName")
+removeItem("variableName")
+
+
+CRUD:
+read
