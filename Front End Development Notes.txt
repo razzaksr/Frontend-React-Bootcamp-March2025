@@ -113,5 +113,8 @@ getItem("variableName")
 removeItem("variableName")
 
 
-CRUD:
-read
+Session Storage: login, logout
+set, get, remove
+
+CRUD: Guest Buddy
+with local and session storage
